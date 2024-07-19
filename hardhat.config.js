@@ -23,12 +23,10 @@ module.exports = {
     hardhat: {},
     mainnet: {
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
-      accounts: [`0x${PRIVATE_KEY}`],
       gasPrice: 20000000000
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
-      accounts: [`0x${PRIVATE_KEY}`],
       gasPrice: 20000000000
     },
   },

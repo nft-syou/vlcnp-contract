@@ -5,19 +5,19 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 import 'erc721a/contracts/ERC721A.sol';
 
-contract VeryLongCNP is ERC721A('Very long CNP', 'VLCNP'), Ownable {
+contract TESTTNFT is ERC721A('TEST1111', 'TTTS'), Ownable {
     enum Phase {
         BeforeMint,
         WLMint,
         PublicMint
     }
 
-    address public constant withdrawAddress = 0x194A919bc6B7Eac730a0df44372296Bdc93e5D1E;
+    address public constant withdrawAddress = 0xb8eA9fA262828d07b2956E0Cc396AB80569D5ADA;
     uint256 public constant maxSupply = 11111;
     uint256 public constant publicMaxPerTx = 10;
     string public constant baseExtension = '.json';
 
-    string public baseURI = '';
+    string public baseURI = 'https://data.syou-nft.com/dumy/json/';
     uint256 public preCost = 0.001 ether;
     uint256 public publicCost = 0.001 ether;
 
